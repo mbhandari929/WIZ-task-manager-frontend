@@ -1,0 +1,80 @@
+.task-delete-form {
+    display: inline;
+}
+
+.permission-read-only {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: #eef2f7;
+    color: #68758a;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.permission-error-body {
+    min-height: 100vh;
+    margin: 0;
+    background:
+        linear-gradient(
+            135deg,
+            #eef3ff,
+            #f7f8fc
+        );
+}
+
+.permission-error-page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+    padding: 24px;
+}
+
+.permission-error-card {
+    width: 100%;
+    max-width: 560px;
+    box-sizing: border-box;
+    padding: 48px;
+    border: 1px solid #dce4ef;
+    border-radius: 24px;
+    background: #ffffff;
+    text-align: center;
+    box-shadow: 0 24px 60px rgba(15, 39, 76, 0.12);
+}
+
+.permission-error-code {
+    margin: 0 0 10px;
+    color: #4b35ad;
+    font-size: 54px;
+    font-weight: 900;
+}
+
+.permission-error-card h1 {
+    margin: 0 0 16px;
+    color: #092447;
+}
+
+.permission-error-card p {
+    margin: 0 0 28px;
+    color: #68758a;
+}
+
+.permission-error-card a {
+    display: inline-flex;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px;
+    border-radius: 12px;
+    background: linear-gradient(
+        90deg,
+        #4b35ad,
+        #2361c7
+    );
+    color: #ffffff;
+    font-weight: 800;
+    text-decoration: none;
+}

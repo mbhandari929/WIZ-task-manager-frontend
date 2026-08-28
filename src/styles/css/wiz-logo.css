@@ -1,0 +1,81 @@
+.wiz-logo {
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.wiz-logo-mark {
+    width: 74px;
+    height: auto;
+    display: block;
+    flex: 0 0 auto;
+}
+
+.wiz-logo-name {
+    color: #121826;
+    font-size: 21px;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.wiz-logo--light .wiz-logo-name {
+    color: #ffffff;
+}
+
+.wiz-logo--compact {
+    gap: 8px;
+}
+
+.wiz-logo--compact .wiz-logo-mark {
+    width: 42px;
+}
+
+.wiz-logo--compact .wiz-logo-name {
+    font-size: 14px;
+}
+
+.auth-brand-panel > .wiz-logo {
+    margin-bottom: 42px;
+}
+
+.sidebar-brand > .wiz-logo {
+    flex: 0 0 auto;
+}
+
+.sidebar-footer > .wiz-logo {
+    flex: 0 0 auto;
+}
+
+
+/* Sidebar footer logo layout */
+.sidebar-footer {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 10px;
+    align-items: center;
+}
+
+.sidebar-footer .wiz-logo + div {
+    min-width: 0;
+    display: grid;
+    gap: 3px;
+}
+
+.sidebar-footer .wiz-logo + div strong,
+.sidebar-footer .wiz-logo + div span {
+    display: block;
+    line-height: 1.3;
+}
+
+.sidebar-footer .wiz-logo + div strong {
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.sidebar-footer .wiz-logo + div span {
+    font-size: 10px;
+    white-space: normal;
+}

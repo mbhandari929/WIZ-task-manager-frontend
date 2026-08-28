@@ -1,0 +1,63 @@
+.app-layout {
+    min-height:100vh;
+}
+
+
+.main-content {
+
+    min-height:100vh;
+
+    margin-left:var(--sidebar-width);
+
+    padding:32px 40px 60px;
+}
+
+
+.task-summary,
+.kanban-section,
+.task-calendar,
+.today-tasks,
+.upcoming-deadlines,
+.recent-activity,
+#add-task,
+#task-list {
+
+    background:var(--white);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:24px;
+
+    margin-bottom:24px;
+
+    box-shadow:var(--shadow);
+}
+
+
+.task-summary h2,
+.kanban-section h2,
+.task-calendar h2,
+.today-tasks h2,
+.upcoming-deadlines h2,
+.recent-activity h2 {
+
+    margin-bottom:18px;
+
+    color:var(--navy);
+
+    font-size:20px;
+
+    font-weight:800;
+}
+
+
+#dashboard,
+#kanban,
+#calendar,
+#add-task,
+#task-list {
+
+    scroll-margin-top:30px;
+}

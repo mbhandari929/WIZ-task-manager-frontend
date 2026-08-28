@@ -1,0 +1,116 @@
+#add-task form {
+
+    display:grid;
+
+    gap:18px;
+}
+
+
+#add-task input,
+#add-task select,
+#add-task textarea,
+#task-list input,
+#task-list select {
+
+    width:100%;
+
+    padding:13px 15px;
+
+    background:white;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    color:var(--text);
+
+    outline:none;
+
+    transition:.2s;
+}
+
+
+#add-task input:focus,
+#add-task select:focus,
+#add-task textarea:focus,
+#task-list input:focus,
+#task-list select:focus {
+
+    border-color:var(--gold);
+
+    box-shadow:
+        0 0 0 3px rgba(212,175,55,.15);
+}
+
+
+#add-task label {
+
+    color:var(--navy);
+
+    font-size:13px;
+
+    font-weight:800;
+}
+
+
+#add-task button {
+
+    width:fit-content;
+
+    padding:12px 26px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--navy),
+            var(--navy-light)
+        );
+
+    color:white;
+
+    font-weight:800;
+
+    transition:.2s;
+}
+
+
+#add-task button:hover {
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 10px 20px rgba(8,27,53,.2);
+}
+
+
+#task-list form {
+
+    display:grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr auto;
+
+    gap:12px;
+
+    align-items:end;
+
+    margin-bottom:20px;
+}
+
+
+#task-list button {
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:10px 16px;
+
+    border-radius:10px;
+
+    font-weight:700;
+}

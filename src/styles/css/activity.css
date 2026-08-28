@@ -1,0 +1,134 @@
+.today-tasks ul,
+.upcoming-deadlines ul,
+.recent-activity ul {
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+}
+
+
+.today-tasks li,
+.upcoming-deadlines li,
+.recent-activity li {
+
+    display:grid;
+
+    align-items:center;
+
+    gap:20px;
+
+    min-height:60px;
+
+    padding:14px 18px;
+
+    margin-bottom:12px;
+
+    background:white;
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    box-shadow:
+
+        0 5px 15px rgba(8,27,53,.05);
+
+    transition:.2s;
+}
+
+
+.today-tasks li {
+
+    grid-template-columns:
+        2fr 1.5fr 1fr auto;
+}
+
+
+.upcoming-deadlines li,
+.recent-activity li {
+
+    grid-template-columns:
+        2fr 1.5fr 1fr 1.5fr auto;
+}
+
+
+.today-tasks li:hover,
+.upcoming-deadlines li:hover,
+.recent-activity li:hover {
+
+    transform:translateX(3px);
+
+    border-color:var(--gold);
+}
+
+
+.today-tasks strong,
+.upcoming-deadlines strong,
+.recent-activity strong {
+
+    color:var(--navy);
+
+    font-weight:800;
+}
+
+
+.today-tasks span,
+.upcoming-deadlines span,
+.recent-activity span {
+
+    color:var(--muted);
+
+    font-size:12px;
+}
+
+
+.today-tasks a,
+.upcoming-deadlines a,
+.recent-activity a {
+
+    justify-self:end;
+
+    padding:6px 12px;
+
+    border-radius:8px;
+
+    background:#eff6ff;
+
+    color:var(--blue);
+
+    font-size:12px;
+
+    font-weight:700;
+}
+
+
+@media (max-width:900px) {
+
+    .today-tasks li,
+    .upcoming-deadlines li,
+    .recent-activity li {
+
+        grid-template-columns:1fr 1fr;
+    }
+
+    .today-tasks a,
+    .upcoming-deadlines a,
+    .recent-activity a {
+
+        justify-self:start;
+    }
+}
+
+
+@media (max-width:600px) {
+
+    .today-tasks li,
+    .upcoming-deadlines li,
+    .recent-activity li {
+
+        grid-template-columns:1fr;
+    }
+}

@@ -1,0 +1,154 @@
+.edit-page-body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 48px 20px;
+    background:
+        linear-gradient(
+            135deg,
+            #eef3ff 0%,
+            #f7f8fc 55%,
+            #eef1fa 100%
+        );
+}
+
+.edit-page {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.edit-card {
+    padding: 42px;
+    border: 1px solid #dfe5f0;
+    border-radius: 24px;
+    background: #ffffff;
+    box-shadow: 0 24px 60px rgba(15, 39, 76, 0.12);
+}
+
+.edit-card-header {
+    margin-bottom: 32px;
+}
+
+.edit-card-label {
+    margin: 0 0 8px;
+    color: #4b45c6;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+}
+
+.edit-card-header h1 {
+    margin: 0 0 10px;
+    color: #071d3b;
+    font-size: 32px;
+}
+
+.edit-card-header p:last-child {
+    margin: 0;
+    color: #68758a;
+}
+
+.edit-task-form {
+    display: grid;
+    gap: 22px;
+}
+
+.edit-task-form .task-field {
+    display: grid;
+    gap: 8px;
+}
+
+.edit-task-form label {
+    color: #132b4d;
+    font-weight: 700;
+}
+
+.edit-task-form input,
+.edit-task-form select,
+.edit-task-form textarea {
+    width: 100%;
+    min-height: 50px;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #ccd6e6;
+    border-radius: 12px;
+    background: #f9fbff;
+    color: #13233d;
+    font: inherit;
+}
+
+.edit-task-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.edit-task-form input:focus,
+.edit-task-form select:focus,
+.edit-task-form textarea:focus {
+    border-color: #4b55ce;
+    outline: 3px solid rgba(75, 85, 206, 0.13);
+    background: #ffffff;
+}
+
+.task-field-message {
+    margin: 4px 0 0;
+    color: #d43d4f;
+    font-size: 14px;
+}
+
+.edit-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.edit-save-button,
+.edit-cancel-button {
+    display: inline-flex;
+    min-height: 50px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.edit-save-button {
+    flex: 1;
+    border: 0;
+    background: linear-gradient(
+        90deg,
+        #4934a8,
+        #2462c7
+    );
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.edit-cancel-button {
+    border: 1px solid #ccd6e6;
+    background: #ffffff;
+    color: #42506a;
+}
+
+@media (max-width: 640px) {
+    .edit-page-body {
+        padding: 20px 12px;
+    }
+
+    .edit-card {
+        padding: 24px 18px;
+        border-radius: 18px;
+    }
+
+    .edit-actions {
+        flex-direction: column;
+    }
+
+    .edit-save-button,
+    .edit-cancel-button {
+        width: 100%;
+    }
+}

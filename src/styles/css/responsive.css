@@ -1,0 +1,125 @@
+@media (max-width:1200px) {
+
+    .task-summary > div {
+
+        grid-template-columns:
+            repeat(3,1fr);
+    }
+
+
+    .kanban-board {
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+
+
+@media (max-width:900px) {
+
+    .sidebar {
+
+        position:relative;
+
+        width:100%;
+
+        height:auto;
+    }
+
+
+    .main-content {
+
+        margin-left:0;
+
+        padding:20px;
+    }
+
+
+    .app-layout {
+
+        display:block;
+    }
+
+
+    .sidebar-nav {
+
+        flex-direction:row;
+
+        overflow-x:auto;
+    }
+
+
+    .topbar {
+
+        flex-direction:column;
+
+        align-items:flex-start;
+    }
+
+
+    .task-summary > div {
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+
+    .kanban-board {
+
+        grid-template-columns:1fr;
+    }
+
+
+    #task-list form {
+
+        grid-template-columns:1fr;
+    }
+
+}
+
+
+
+@media (max-width:600px) {
+
+    .main-content {
+
+        padding:14px;
+    }
+
+
+    .task-summary,
+    .kanban-section,
+    .task-calendar,
+    .today-tasks,
+    .upcoming-deadlines,
+    .recent-activity,
+    #add-task,
+    #task-list {
+
+        padding:16px;
+
+        border-radius:14px;
+    }
+
+
+    .topbar h1 {
+
+        font-size:24px;
+    }
+
+
+    .task-summary > div {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .topbar-add-button {
+
+        width:100%;
+    }
+
+}

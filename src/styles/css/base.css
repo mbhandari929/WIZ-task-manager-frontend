@@ -1,0 +1,57 @@
+:root {
+    --navy:#081b35;
+    --navy-light:#102f55;
+    --gold:#d4af37;
+    --gold-light:#f8e7a0;
+
+    --blue:#2563eb;
+    --bg:#f5f7fb;
+    --white:#ffffff;
+
+    --text:#172033;
+    --muted:#667085;
+    --border:#e5e7eb;
+
+    --success:#16a34a;
+    --danger:#dc2626;
+
+    --sidebar-width:270px;
+
+    --radius:16px;
+
+    --shadow:
+        0 10px 30px rgba(8,27,53,.08);
+}
+
+
+* {
+    box-sizing:border-box;
+}
+
+
+body {
+    margin:0;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    font-family:
+    "Noto Sans JP",
+    "Yu Gothic",
+    "Meiryo",
+    sans-serif;
+}
+
+
+a {
+    text-decoration:none;
+}
+
+
+button,
+input,
+select,
+textarea {
+    font-family:inherit;
+}

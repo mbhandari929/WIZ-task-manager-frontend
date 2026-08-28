@@ -1,0 +1,92 @@
+/* React-only states and small layout bridges.
+   The product styling remains in the original Flask CSS files. */
+
+#root {
+    min-height: 100vh;
+}
+
+.task-field {
+    display: grid;
+    gap: 8px;
+}
+
+.error-message {
+    margin-bottom: 18px;
+    padding: 13px 16px;
+    border: 1px solid #f2c7cc;
+    border-radius: 11px;
+    color: #a12632;
+    background: #fff0f1;
+    font-weight: 700;
+}
+
+.loading-state {
+    display: flex;
+    min-height: 120px;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--muted);
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.loading-spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #d9e2ee;
+    border-top-color: #1559b7;
+    border-radius: 50%;
+    animation: react-spin 0.8s linear infinite;
+}
+
+@keyframes react-spin {
+    to { transform: rotate(360deg); }
+}
+
+.kanban-column-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.kanban-column-header span {
+    display: inline-grid;
+    min-width: 28px;
+    min-height: 28px;
+    place-items: center;
+    border-radius: 999px;
+    color: var(--navy);
+    background: #e9eef5;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+#task-list form > button[type="submit"] {
+    min-height: 44px;
+    color: #ffffff;
+    background: var(--navy);
+}
+
+#task-list .task-filter-clear {
+    min-height: 44px;
+    color: #42506a;
+    background: #eef2f7;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.62;
+}
+
+.auth-page,
+.edit-page-body,
+.permission-error-page {
+    box-sizing: border-box;
+}
+
+.admin-message {
+    margin-top: 16px;
+}

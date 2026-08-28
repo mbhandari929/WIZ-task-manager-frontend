@@ -1,0 +1,110 @@
+#task-list {
+    overflow-x:auto;
+}
+
+
+#task-list table {
+
+    width:100%;
+
+    min-width:850px;
+
+    border-collapse:separate;
+
+    border-spacing:0;
+
+    background:white;
+
+    border-radius:14px;
+
+    overflow:hidden;
+
+    box-shadow:
+
+        0 5px 15px rgba(8,27,53,.06);
+}
+
+
+#task-list th {
+
+    padding:15px 16px;
+
+    text-align:left;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--navy),
+            var(--navy-light)
+        );
+
+    color:white;
+
+    font-size:12px;
+
+    font-weight:800;
+}
+
+
+#task-list td {
+
+    padding:14px 16px;
+
+    border-bottom:1px solid var(--border);
+
+    color:var(--muted);
+
+    font-size:13px;
+}
+
+
+#task-list tbody tr {
+
+    transition:.2s;
+}
+
+
+#task-list tbody tr:hover {
+
+    background:#fffdf5;
+}
+
+
+#task-list td:first-child {
+
+    color:var(--navy);
+
+    font-weight:800;
+}
+
+
+#task-list a {
+
+    color:var(--blue);
+
+    font-weight:700;
+}
+
+
+#task-list button {
+
+    padding:8px 14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#fff1f1;
+
+    color:var(--danger);
+
+    font-size:12px;
+
+    font-weight:700;
+}
+
+
+#task-list button:hover {
+
+    background:#ffe0e0;
+}
